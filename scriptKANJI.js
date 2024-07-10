@@ -1,3 +1,9 @@
+// AFFICHAGE DE VERSION 
+function showVersion() {
+    console.log('Version : 2');
+}
+window.onload = showVersion;
+
 // VARIABLES*
 const delimiter = ",";
 const filepath = 'kanji.csv';
@@ -200,7 +206,7 @@ function newQuestion(tab) {
     }
     //console.log('LOAD : ', currentQuestion, correctAnswer);
     showQuestion(quiz);
-    generateRandomResponses(quiz);
+    generateRandomResponses(quiz, tab);
 } 
 
 function showQuestion(type) {
@@ -224,7 +230,7 @@ function showQuestion(type) {
     //console.log('SYMBOL TEXT CONTEN : ', symbol.textContent);
 }
 
-function generateRandomResponses(type) {
+function generateRandomResponses(type, tab) {
     const choices = new Set();
     choices.add(correctAnswer);
     //console.log('CHOICES LENGTH : ' + choices.size);
