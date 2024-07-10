@@ -1,0 +1,48 @@
+# VOICI LE FICHIER DE BASE POUR LE QUIZ
+
+# Amusez-vous à le personaliser avec vos propres kanji.
+
+
+
+# .....................................................
+
+# REGLES D'UTILISATION POUR UN BON FONCTIONNEMENT : 
+# .....................................................
+
+# 1. Respectez la structure que voici :
+# Kanji,Kana,French,Emoji
+
+# 2. N'ajouter aucun espacement entre les éléments :
+# Kanji, Kana , French ,Emoji
+
+# 3. Vous pouvez ajouter un espacement entre les kanji :
+# 人,personne,ひと
+#
+#
+# 男,homme,おとこ
+
+# 4. Vous pouvez ajouter des lignes de commentaires en les commençant par : #
+
+
+# LISTE KANJI BASE :
+
+人,ひと,personne,🧑
+男,おとこ,homme,👨
+女,おんな,femme,👩
+子,こ,enfant,🧒
+日,ひ,soleil,🌞
+月,つき,lune,🌜
+時,とき,temps,⏰
+水,みず,eau,💧
+火,ひ,feu,🔥
+土,つち,terre,🌍
+風,かぜ,vent,💨
+空,そら,ciel,☁️
+山,やま,montagne,⛰️
+川,かわ,rivière,🌊
+木,き,arbre,🌳
+花,はな,fleur,🌸
+雨,あめ,pluie,🌧️
+雪,ゆき,neige,❄️
+金,かね,argent,💰
+刀,かたな,sabre,⚔️

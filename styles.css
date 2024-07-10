@@ -1,0 +1,338 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+body {
+    padding: 15px;
+}
+
+a {
+    text-decoration: none; /* Supprime la soulignement par défaut */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Pour espacer les éléments */
+    align-items: center; /* Pour centrer verticalement les éléments */
+    font-size: 16px; /* Taille de police pour les liens du menu */
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center; /* Centrer les éléments verticalement */
+}
+
+.menu > a {
+    width: 70px;
+    display: flex;
+    justify-content: center; /* Centrer le texte horizontalement */
+    align-items: center; /* Centrer le texte verticalement */
+    font-size: 16px; /* Taille du texte */
+    border-radius: 5px; /* Coins arrondis */
+    margin-left: 20px; /* Espacement entre les liens */
+    transition: transform 0.3s ease;
+}
+
+.menu > a:hover {
+    font-weight: bold;
+    transform: scale(1.1); /* Augmenter l'échelle de 10% au survol */
+}
+
+.logo-text {
+    display: flex;
+    justify-content: space-between; /* Pour espacer les éléments */
+    align-items: center; /* Pour centrer verticalement les éléments */
+}
+
+.logo {
+    height: 50px;
+}
+
+nav > * > .logo {
+    margin-right: 15px;
+}
+
+.hero {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alignement vertical des éléments enfants */
+}
+
+.hero > * > h1 {
+    padding-top: 250px;
+}
+
+.hero > .welcome {
+    margin-bottom: 200px;
+}
+
+.hero > a:hover {
+    font-weight: bold; /* Passage en gras au survol */
+}
+
+.hero h1 {
+    margin: 0; /* Supprime les marges par défaut du h1 */
+}
+
+.hero .logo {
+    vertical-align: middle; /* Alignement vertical de l'image */
+}
+
+.redirections {
+    height: 700px; /* Vous pouvez ajuster la hauteur selon vos besoins */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer les éléments verticalement */
+    align-items: center; /* Centrer les éléments horizontalement */
+    text-align: center; 
+}
+
+.choices {
+    display: flex;
+    gap: 20px; /* Optionnel : pour ajouter de l'espace entre les boutons */
+}
+
+.choices > a {
+    margin-top: 200px;
+    padding: 20px;
+    flex: 1;
+    width: 100px;
+    background-color: #bbb;
+    display: flex;
+    justify-content: center; /* Centrer le texte horizontalement */
+    align-items: center; /* Centrer le texte verticalement */
+    text-decoration: none; /* Supprimer la décoration du texte */
+    color: black; /* Couleur du texte */
+    font-size: 16px; /* Taille du texte */
+    border-radius: 5px; /* Coins arrondis */
+    transition: transform 0.3s ease;
+}
+
+.choices > a:hover {
+    transform: scale(1.1); /* Augmente l'échelle de 10% au survol */
+    font-weight: bold;
+}
+
+/* Smooth scrolling effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style Vocab */
+.page {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement les éléments */
+    align-items: center; /* Centre horizontalement les éléments */
+    text-align: center; /* Centre le texte à l'intérieur des éléments */
+}
+
+.group {
+    display: flex; /* Utilise Flexbox pour aligner les éléments horizontalement */
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    gap: 20px; /* Optionnel : Ajoute un espacement entre les éléments */
+}
+
+
+.quiz {
+    min-width: 300px;
+    min-height: 250px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.score {
+    margin: 10px;
+}
+
+.question {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.symbol {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.answerCHECK {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.legend {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+}
+
+.page > * {
+    margin: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #777;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #333;
+}
+
+.upload-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espacement entre les boutons */
+    margin-top: 20px;
+}
+
+.dl-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: black;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.dl-button:hover {
+    color: white;
+    background-color: #aaa;
+}
+
+/* DROP ZONE */
+
+#dropZone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+#dropZone:hover {
+    border-color: #aaa;
+}
+
+#dropZone.dragging {
+    border-color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+/* UPLOAD */
+
+.upload-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.drop-zone {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px dashed #cccccc;
+    border-radius: 10px;
+    background-color: #fafafa;
+    color: #999999;
+}
+
+.drop-zone.dragover {
+    border-color: #333333;
+    background-color: #e0e0e0;
+    color: #000000;
+}
+
+
+/* OUTPUT DISPLAY MASKED */
+.output {
+    display: none;
+}
+.output {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: #fafafa;
+    white-space: pre-wrap; /* Pour conserver les sauts de ligne et les espaces */
+}
+
+.error-message {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+.success-message {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+.drop-zone {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px dashed #cccccc;
+    border-radius: 10px;
+    background-color: #fafafa;
+    color: #999999;
+    cursor: pointer; /* Ajoutez le curseur pointeur pour indiquer que la zone est cliquable */
+}
+
+.drop-zone.dragover {
+    border-color: #333333;
+    background-color: #e0e0e0;
+    color: #000000;
+}
+
+.hidden {
+    display: none;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Kana - Kanji</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/EZLogo.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <a class="logo-text" href="index.html">
+            <img class="logo" src="images/EZLogo.svg" alt="Logo">
+            <h1>Easy Kana</h1>
+        </a>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="vocabulaire.html">Vocabulaire</a>
+            <a href="kanji.html">Kanji</a>
+        </div>
+    </nav>
+
+
+    <div id="UPLOAD" class="page">
+        <div class="upload-container">
+            <h1>Entrainement Kanji</h1>
+            <div id="drop-zone" class="drop-zone">
+                Commencez une session prédéfinie ou importez votre fichier CSV
+            </div>
+            <input type="file" id="file-input" accept=".csv" style="display: none;">
+            <div id="error-message" class="error-message"></div>
+            <div id="output" class="output"></div>
+            
+            <div class="upload-buttons">
+                <a href="kanji.csv" download="kanji.csv">
+                    <button class="dl-button">Customiser son CSV</button>
+                </a>
+                <button id="startQuizButton" class="button">Commencer le Quiz</button>
+            </div>
+        </div>    
+    </div>
+    <div id="QUIZ" class="page">
+        <div class="quiz">
+            <h1>Entrainement Kanji</h1>
+            <h2 class="score" >Score : <span id="score"></span></h2>
+            <div class="question" id="question"></div>
+            <div class="symbol" id="symbol"></div>
+            <div id="choices">
+                <button class="button choice" onclick="checkAnswer(this)"></button>
+                <button class="button choice" onclick="checkAnswer(this)"></button>
+                <button class="button choice" onclick="checkAnswer(this)"></button>
+                <button class="button choice" onclick="checkAnswer(this)"></button>
+            </div>
+            <div class="answerCHECK" id="answerCHECK"></div>
+        </div>
+    </div>
+
+
+    <script src="scriptKANJI.js"></script>
+</body>
+</html>
