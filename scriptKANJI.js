@@ -1,9 +1,3 @@
-// AFFICHAGE DE VERSION 
-function showVersion() {
-    console.log('Version : 2');
-}
-window.onload = showVersion;
-
 // VARIABLES*
 const delimiter = ",";
 const filepath = 'kanji.csv';
@@ -38,6 +32,7 @@ quizPage.style.display = 'none';
 
 // PRECHARGEMENT DU FICHIER CSV PAR DEFAUT : ............................
 function preLoadBaseCSV() {
+    console.log('Version : 2');
     console.log('PRELOAD TEST 3');
     fetch('kanji.csv')  // Assurez-vous que le chemin est correct
         .then(response => {
